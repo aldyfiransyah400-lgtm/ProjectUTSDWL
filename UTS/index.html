@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas UTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="dashboard-container">
+        <header class="top-header">
+            <h1>Royal Dashboard</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari Kelas, Dokumen, Aktifitas dll...">
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <nav class="sidebar">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Mahasiswa</a></li>
+                    <li><a href="#" class="nav-link">Kelas</a></li>
+                    <li><a href="#" class="nav-link">Aktifitas</a></li>
+                    <li><a href="#" class="nav-link">Statistik</a></li>
+                    <li><a href="#" class="nav-link">Dokumen</a></li>
+                    <li><a href="#" class="nav-link menu-settings">Settings</a></li>
+                </ul>
+                <div class="sign-out-container">
+                    <a href="#" id="signOutBtn" class="sign-out">Sign Out</a>
+                </div>
+            </nav>
+
+            <div class="content-area">    
+                <main class="welcome-banner">
+                    <div class="welcome-text">
+                        <h2>Selamat Datang, Aldy Firansyah<br>Kelas SI-3D</h2>
+                        <p>Kamu memiliki Statistik, 3 Progres Kelas, 4 Aktifitas Selanjutnya dan 3 Lampiran Dokumen yang ada pada aplikasi ini.</p>
+                    </div>
+                    <div class="profile-avatar">
+                        <img src="picture/aldy.jpg" alt="Foto Profil Aldy" class="avatar-img">
+                    </div>
+                </main>
+
+                <!-- GRID SECTION TENGAH (ASIDE & SECTIONS) -->
+                <div class="grid-middle">
+                    
+                    <!-- ASIDE: Statistik Mahasiswa -->
+                    <aside class="card statistik-card">
+                        <h3>Statistik Mahasiswa</h3>
+                        <div class="chart-box">
+                            <img src="picture/Chart_Statistik.svg" alt="" class="chart-img">
+                        </div>
+                    </aside>
+
+                    <!-- SECTION 1: Progres Kelas -->
+                    <section class="card progres-card">
+                        <h3>Progres Kelas</h3>
+                        <div class="item-list">
+                            <div class="sub-item searchable">
+                                <strong>Matakuliah A</strong>
+                                <span>78 Pendaftar</span>
+                            </div>
+                            <div class="sub-item searchable">
+                                <strong>Matakuliah B</strong>
+                                <span>30 Pendaftar</span>
+                            </div>
+                            <div class="sub-item searchable">
+                                <strong>Matakuliah C</strong>
+                                <span>40 Pendaftar</span>
+                            </div>
+                            <div class="sub-item searchable">
+                                <strong>Matakuliah D</strong>
+                                <span>10 Pendaftar</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECTION 2: Aktifitas Selanjutnya -->
+                    <section class="card aktifitas-card">
+                        <h3>Aktifitas Selanjutnya</h3>
+                        <div class="item-list">
+                            <div class="sub-item searchable">
+                                <strong>Perkuliahan Daring 1</strong>
+                                <span class="date-txt">Senin, 15 Januari 2025</span>
+                            </div>
+                            <div class="sub-item searchable">
+                                <strong>Perkuliahan Daring 1</strong>
+                                <span class="date-txt">Selasa, 15 Februari 2025</span>
+                            </div>
+                            <div class="sub-item searchable">
+                                <strong>Perkuliahan Daring 1</strong>
+                                <span class="date-txt">Rabu, 15 Maret 2025</span>
+                            </div>
+                            <div class="sub-item searchable">
+                                <strong>Perkuliahan Daring 1</strong>
+                                <span class="date-txt">Kamis, 15 April 2025</span>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- FOOTER: Lampiran Dokumen -->
+                <footer class="card footer-card">
+                    <h3>Lampiran</h3>
+                    <div class="lampiran-wrapper">
+                        <div class="lampiran-row searchable">
+                            <p><strong>Lampiran Dokumen 1</strong> - Matakuliah A | Tugas Bersama Perkuliahan Daring</p>
+                            <span class="pipe">|</span>
+                            <a href="#" class="doc-action">Lihat Dokumen</a>
+                        </div>
+                        <div class="lampiran-row searchable">
+                            <p><strong>Lampiran Dokumen 2</strong> - Matakuliah B | Tugas Bersama Perkuliahan Daring</p>
+                            <span class="pipe">|</span>
+                            <a href="#" class="doc-action">Lihat Dokumen</a>
+                        </div>
+                        <div class="lampiran-row searchable">
+                            <p><strong>Lampiran Dokumen 3</strong> - Matakuliah C | Tugas Bersama Perkuliahan Daring</p>
+                            <span class="pipe">|</span>
+                            <a href="#" class="doc-action">Lihat Dokumen</a>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+   </div>
+
+     <!-- kode js -->
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eef4fc;
+    color: #1e293b;
+    padding: 20px;
+}
+
+.dashboard-container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b4ea2;
+}
+
+.search-box input {
+    width: 280px;
+    padding: 10px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 13px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #0b4ea2;
+}
+
+.main-wrapper {
+   display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.sidebar {
+   background-color: #0b4ea2;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;   
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-link {
+    display: block;
+    width: 100%;
+    padding: 12px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #08336e;
+    font-weight: bold;
+}
+
+.menu-settings {
+    color: #93c5fd;
+}
+
+.sign-out-container {
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.sign-out {
+    display: block;
+    padding: 12px 10px;
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sign-out:hover {
+    opacity: 0.85;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.welcome-banner {
+    background-color: #0b4ea2;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    gap: 10px;
+}
+
+.welcome-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.welcome-text p {
+    font-size: 13px;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+.profile-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+}
+
+.grid-middle {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.grid-middle .statistik-card {
+    flex: 14px;
+}
+
+.card {
+   background-color: #ffffff;
+   border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 14px;
+}
+
+.chart-img {
+   width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.chart-svg {
+    width: 100%;
+    height: auto;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub-item {
+    background-color: #f1f6fd;
+    padding: 10px 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sub-item strong {
+    font-size: 12px;
+    color: #1e293b;
+}
+
+.sub-item span {
+    font-size: 11px;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.lampiran-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lampiran-row {
+    background-color: #f1f6fd;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.lampiran-row p {
+    color: #334155;
+}
+
+.pipe {
+    color: #94a3b8;
+}
+
+.doc-action {
+    color: #0b4ea2;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
